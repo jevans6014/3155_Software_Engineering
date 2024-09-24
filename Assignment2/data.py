@@ -1,3 +1,4 @@
+### Data ###
 recipes = {
     "small": {
         "ingredients": {
