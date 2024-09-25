@@ -27,9 +27,9 @@ def main():
 
             # check for sufficient ingredients
             if sandwich_maker_instance.check_resources(sandwich["ingredients"]):
-                total_money = cashier_instance.process_coins()
+                money = cashier_instance.process_coins()
 
-                if cashier_instance.transaction_result(total_money, sandwich["cost"]):
+                if cashier_instance.transaction_result(money, sandwich["cost"]):
                     sandwich_maker_instance.make_sandwich(size, sandwich["ingredients"])
         else:
             print("Invalid Entry. Try again")
